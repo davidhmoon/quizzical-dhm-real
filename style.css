@@ -1,0 +1,97 @@
+*, h1 {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    color: #293264
+}
+
+main {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F7FB;
+    padding: 2em 0;
+}
+
+/* INTRO STYLE */
+
+.btn {
+    font-family: 'Karla', sans-serif;
+    background-color: #4D5B9E;
+    border: none;
+    border-radius: 15px;
+    padding: 1em;
+    width: 12em;
+    color: #F5F7FB;
+    cursor: pointer;
+}
+
+.start-game-btn,
+.intro-description,
+.score {
+    margin: .9em;
+}
+
+/* QUIZ STYLE */
+
+.answers-container {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    border-bottom: 1px solid #DBDEF0;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+
+.question {
+    width: 90%;
+    max-width: 1000px;
+    font-size: 1.2em;
+    margin-bottom: .6em;
+}
+
+.question-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.answer {
+    border: 1px solid #4D5B9E;
+    margin-right: 1em;
+    padding: .3em .7em;
+    border-radius: 10px;
+    min-width: 5em;
+    text-align: center;
+    font-size: .9em;
+}
+
+.is-selected {
+    background-color: #D6DBF5;
+    border: 1px solid transparent;
+}
+
+.is-wrong {
+    background-color: #F8BCBC;
+    border: 1px solid transparent;
+}
+
+.is-right {
+    background-color: #94D7A2;
+    border: 1px solid transparent;
+}
+
+.answer:hover,
+.answer:focus {
+    background-color: #293264;
+    color: #DBDEF0;
+    cursor: pointer;
+}
+
